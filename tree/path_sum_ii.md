@@ -1,12 +1,10 @@
-# Path Sum II
+# 113. Path Sum II \[Series\]
 
 > Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
+>
+> For example: Given the below binary tree and sum = 22.
 
-> For example:
-Given the below binary tree and sum = 22.
-
-
-```
+```text
               5
              / \
             4   8
@@ -14,30 +12,26 @@ Given the below binary tree and sum = 22.
           11  13  4
          /  \      \
         7    2      1
-
 ```
 
 > return
 
-```
+```text
 [
    [5,4,11,2],
    [5,8,4,5]
 ]
 ```
-题目翻译：
-给定一个二叉树，并且给定一个值，找出所有从根节点到叶子节点和等于这个给定值的路径.上面的例子可以很好地让读者理解这个题目的目的.
 
-解题思路:
-这个题目和Path Sum的解法几乎是一模一样，都是用dfs来进行求解，不过就是在传参数的时候有些不同了，因为题目的要求也不同.
+题目翻译： 给定一个二叉树，并且给定一个值，找出所有从根节点到叶子节点和等于这个给定值的路径.上面的例子可以很好地让读者理解这个题目的目的.
 
-时间复杂度:
-O(n)
+解题思路: 这个题目和Path Sum的解法几乎是一模一样，都是用dfs来进行求解，不过就是在传参数的时候有些不同了，因为题目的要求也不同.
+
+时间复杂度: O\(n\)
 
 代码如下:
 
-```c++
-
+```cpp
 /**
  * Definition for binary tree
  * struct TreeNode {
@@ -77,5 +71,4 @@ public:
     }
 };
 ```
-
 

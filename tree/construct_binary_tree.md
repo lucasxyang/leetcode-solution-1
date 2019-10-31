@@ -1,10 +1,12 @@
-# Construct Binary Tree from Inorder and Postorder Traversal
+# 105, 106. Construct Binary Tree \[Series\]
+
+## 106. Construct Binary Tree from Inorder and Postorder Traversal
 
 > Given inorder and postorder traversal of a tree, construct the binary tree.
 
 要知道如何构建二叉树，首先我们需要知道二叉树的几种遍历方式，譬如有如下的二叉树：
 
-```
+```text
                 1
         --------|-------
         2               3
@@ -12,9 +14,9 @@
     4       5       6       7
 ```
 
-+ 前序遍历 1245367
-+ 中序遍历 4251637
-+ 后续遍历 4526731
+* 前序遍历 1245367
+* 中序遍历 4251637
+* 后续遍历 4526731
 
 具体到上面这一题，我们知道了一个二叉树的中序遍历以及后序遍历的结果，那么如何构建这颗二叉树呢？
 
@@ -28,7 +30,7 @@
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     unordered_map<int, int> m;
@@ -66,19 +68,19 @@ public:
 
 这里我们需要注意，为了保证快速的在中序遍历结果里面找到根节点，我们使用了hash map。
 
-# Construct Binary Tree from Preorder and Inorder Traversal
+## 105. Construct Binary Tree from Preorder and Inorder Traversal
 
 > Given preorder and inorder traversal of a tree, construct the binary tree.
 
 这题跟上面那题类似，通过前序遍历和中序遍历的结果构造二叉树，我们只需要知道前序遍历的第一个值就是根节点，那么仍然可以采用上面提到的方式处理：
 
-+ 通过前序遍历找到根节点
-+ 通过根节点将中序遍历数据拆分成两部分
-+ 对于各个部分重复上述操作
+* 通过前序遍历找到根节点
+* 通过根节点将中序遍历数据拆分成两部分
+* 对于各个部分重复上述操作
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
      unordered_map<int, int> m;
@@ -114,3 +116,4 @@ public:
 ```
 
 可以看到，这两道题目，只要能清楚了树的几种遍历方式，以及找到如何找到根节点，并通过中序遍历拆分成两个子树，就能很容易的搞定了，唯一需要注意的是写代码的时候拆分索引位置要弄对。
+

@@ -1,26 +1,26 @@
 # Reorder List
 
 > Given a singly linked list L: L0→L1→…→Ln-1→Ln,
-
+>
 > reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
-
+>
 > You must do this in-place without altering the nodes' values.
-
+>
 > For example,
-
+>
 > Given {1,2,3,4}, reorder it to {1,4,2,3}.
 
 这题比较简单，其实就是将链表的左右两边合并，只是合并的时候右半部分需要翻转一下。
 
 主要有三步：
 
-+ 快慢指针找到切分链表
-+ 翻转右半部分
-+ 依次合并
+* 快慢指针找到切分链表
+* 翻转右半部分
+* 依次合并
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     void reorderList(ListNode *head) {
@@ -70,3 +70,4 @@ public:
     }
 };
 ```
+

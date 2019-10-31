@@ -1,4 +1,6 @@
-# 前言
+# Introduction
+
+## 前言
 
 首先声明，我和张晓翀都不是算法牛人，确切的说应该是算法的门外汉，小白一个。所以我们为了撬开算法的大门，各自刷完了一遍LeetCode的题目，这其中碰到了很多困难，当然也少不了用了Google以及参考了别人的代码。
 
@@ -14,10 +16,12 @@
 
 最后，我们非常欢迎大家的反馈（前提是有人看我们的东西）。如果你有任何的意见建议，欢迎在Github的issue里面提出，或者直接与我们联系。
 
-# Thanks Contributor
+## Thanks Contributor
 
-+ 陈心宇 [collectchen@gmail.com](collectchen@gmail.com)
-+ 张晓翀 [xczhang07@gmail.com](xczhang07@gmail.com)
+* 陈心宇 [collectchen@gmail.com](https://github.com/lucasxyang/leetcode-solution-1/tree/3c692b936d7664ee2d68a76c56ccc390cac104ba/collectchen@gmail.com)
+* 张晓翀 [xczhang07@gmail.com](https://github.com/lucasxyang/leetcode-solution-1/tree/3c692b936d7664ee2d68a76c56ccc390cac104ba/xczhang07@gmail.com)
 
-# Maintainer
-+ SiddonTang [siddontang@gmail.com](siddontang@gmail.com)
+## Maintainer
+
+* SiddonTang [siddontang@gmail.com](https://github.com/lucasxyang/leetcode-solution-1/tree/3c692b936d7664ee2d68a76c56ccc390cac104ba/siddontang@gmail.com)
+

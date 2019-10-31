@@ -1,4 +1,4 @@
-# Maximal Rectangle
+# 85. Maximal Rectangle
 
 > Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing all ones and return its area.
 
@@ -6,7 +6,7 @@
 
 这题要求在一个矩阵里面求出全部包含1的最大矩形面积，譬如这个：
 
-```
+```text
     0 0 0 0
     1 1 1 1
     1 1 1 0
@@ -15,7 +15,7 @@
 
 我们可以知道，最大的矩形面积为6。也就是下图中虚线包围的区域。那么我们如何得到这个区域呢？
 
-```
+```text
     0  0  0  0
    |--------|
    |1  1  1 |1
@@ -24,13 +24,13 @@
     0  1  0  0
 ```
 
-对于上面哪一题，我们先去掉最下面的一行，然后就可以发现，它可以转化成一个直方图，数据为[2, 2, 2, 0]，我们认为1就是高度，如果碰到0，譬如上面最右列，则高度为0，而计算这个直方图最大矩形面积就很容易了，我们已经在[Largest Rectangle in Histogram](largest_rectangle_in_histogram.md)处理了。
+对于上面哪一题，我们先去掉最下面的一行，然后就可以发现，它可以转化成一个直方图，数据为\[2, 2, 2, 0\]，我们认为1就是高度，如果碰到0，譬如上面最右列，则高度为0，而计算这个直方图最大矩形面积就很容易了，我们已经在[Largest Rectangle in Histogram](largest_rectangle_in_histogram.md)处理了。
 
 所以我们可以首先得到每一行的直方图，分别求出改直方图的最大区域，最后就能得到结果了。
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     int maximalRectangle(vector<vector<char> > &matrix) {
@@ -80,5 +80,4 @@ public:
     }
 };
 ```
-
 

@@ -1,7 +1,9 @@
-# Maximum Depth of Binary Tree
+# 104, 111. Depth of Binary Tree \[Series\]
+
+## 104. Maximum Depth of Binary Tree
 
 > Given a binary tree, find its maximum depth.
-
+>
 > The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
 这题要求我们求出一个二叉树最大深度，也就是从根节点到最远的叶子节点的距离。
@@ -10,7 +12,7 @@
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     int num;
@@ -43,17 +45,17 @@ public:
 };
 ```
 
-# Minimum Depth of Binary Tree
+## 111. Minimum Depth of Binary Tree
 
 > Given a binary tree, find its minimum depth.
-
+>
 > The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 
 这题跟上题几乎一样，区别在于需要求出根节点到最近的叶子节点的深度，我们仍然使用遍历的方式。
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     int n;
@@ -91,3 +93,4 @@ public:
     }
 };
 ```
+

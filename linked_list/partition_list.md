@@ -1,14 +1,14 @@
 # Partition List
 
 > Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.
-
+>
 > You should preserve the original relative order of the nodes in each of the two partitions.
-
+>
 > For example,
-
-> Given 1->4->3->2->5->2 and x = 3,
-
-> return 1->2->2->4->3->5.
+>
+> Given 1-&gt;4-&gt;3-&gt;2-&gt;5-&gt;2 and x = 3,
+>
+> return 1-&gt;2-&gt;2-&gt;4-&gt;3-&gt;5.
 
 这题要求我们対链表进行切分，使得左半部分所有节点的值小于x，而右半部分大于等于x。
 
@@ -16,7 +16,7 @@
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     ListNode *partition(ListNode *head, int x) {
@@ -42,3 +42,4 @@ public:
     }
 };
 ```
+

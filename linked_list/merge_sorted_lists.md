@@ -1,10 +1,12 @@
-# Merge Two Sorted Lists
+# Merge Sorted Lists
+
+## Merge Two Sorted Lists
 
 > Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 
 这题要求合并两个已经排好序的链表，很简单的题目，直接上代码：
 
-```c++
+```cpp
 class Solution {
 public:
     ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
@@ -38,15 +40,15 @@ public:
 };
 ```
 
-# Merge k Sorted Lists
+## Merge k Sorted Lists
 
 > Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 
-这题需要合并k个排好序的链表，我们采用`divide and conquer`的方法，首先两两合并，然后再将先前合并的继续两两合并。时间复杂度为O(NlgN)。
+这题需要合并k个排好序的链表，我们采用`divide and conquer`的方法，首先两两合并，然后再将先前合并的继续两两合并。时间复杂度为O\(NlgN\)。
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
      ListNode *mergeKLists(vector<ListNode *> &lists) {
@@ -91,3 +93,4 @@ public:
     }
 };
 ```
+

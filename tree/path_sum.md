@@ -1,11 +1,10 @@
-# Path Sum
+# 112. Path Sum \[Series\]
 
 > Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
+>
+> For example: Given the below binary tree and sum = 22,
 
-> For example:
-Given the below binary tree and sum = 22,
-
-```
+```text
               5
              / \
             4   8
@@ -13,21 +12,19 @@ Given the below binary tree and sum = 22,
           11  13  4
          /  \      \
         7    2      1
-
 ```
-> return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
 
-题目翻译:
-给定一颗二叉树和一个特定值，写一个方法来判定这棵树是否存在这样一种条件，使得从root到其中一个叶子节点的路径的和等于给定的sum值.
+> return true, as there exist a root-to-leaf path 5-&gt;4-&gt;11-&gt;2 which sum is 22.
 
-解题思路:
-这道题很常规，直接用DFS就可以求解.
+题目翻译: 给定一颗二叉树和一个特定值，写一个方法来判定这棵树是否存在这样一种条件，使得从root到其中一个叶子节点的路径的和等于给定的sum值.
 
-时间复杂度:
-O(n)
+解题思路: 这道题很常规，直接用DFS就可以求解.
+
+时间复杂度: O\(n\)
 
 代码如下:
-```c++
+
+```cpp
 /**
  * Definition for binary tree
  * struct TreeNode {
@@ -63,5 +60,5 @@ public:
     }
 
 };
-
 ```
+

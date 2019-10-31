@@ -1,12 +1,10 @@
 # Candy
 
 > There are N children standing in a line. Each child is assigned a rating value.
-
+>
 > You are giving candies to these children subjected to the following requirements:
-
-> Each child must have at least one candy.
-> Children with a higher rating get more candies than their neighbors.
-What is the minimum candies you must give?
+>
+> Each child must have at least one candy. Children with a higher rating get more candies than their neighbors. What is the minimum candies you must give?
 
 好了，终于到了小盆友，排队领糖果的时候了，我们可是坏叔叔。
 
@@ -16,7 +14,7 @@ What is the minimum candies you must give?
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     int candy(vector<int> &ratings) {
@@ -45,3 +43,4 @@ public:
     }
 };
 ```
+

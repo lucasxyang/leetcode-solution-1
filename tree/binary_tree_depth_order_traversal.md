@@ -1,24 +1,25 @@
-# Binary Tree Depth Order Traversal
+# 94, 144, 145. Binary Tree Depth Order Traversal \[Series\]
+
+## Binary Tree Depth Order Traversal
 
 前面我们解决了tree的level order遍历问题，这里我们需要来处理tree的depth order，也就是前序，中序和后序遍历。
 
-# Binary Tree Preorder Traversal
+## 144. Binary Tree Preorder Traversal
 
 > Given a binary tree, return the preorder traversal of its nodes' values.
-
-> For example:
-> Given binary tree {1,#,2,3},
-
->```
-   1
-    \
-     2
-    /
-   3
-```
-
-> return [1,2,3].
-
+>
+> For example: Given binary tree {1,\#,2,3},
+>
+> ```text
+>    1
+>     \
+>      2
+>     /
+>    3
+> ```
+>
+> return \[1,2,3\].
+>
 > Note: Recursive solution is trivial, could you do it iteratively?
 
 给定一颗二叉树，使用迭代的方式进行前序遍历。
@@ -29,7 +30,7 @@
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     vector<int> preorderTraversal(TreeNode *root) {
@@ -66,7 +67,7 @@ public:
 };
 ```
 
-# Binary Tree Inorder Traversal
+## 94. Binary Tree Inorder Traversal
 
 给定一颗二叉树，使用迭代的方式进行中序遍历。
 
@@ -74,7 +75,7 @@ public:
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode *root) {
@@ -107,7 +108,7 @@ public:
 };
 ```
 
-# Binary Tree Postorder Traversal
+## 145. Binary Tree Postorder Traversal
 
 给定一颗二叉树，使用迭代的方式进行后序遍历。
 
@@ -115,7 +116,7 @@ public:
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     vector<int> postorderTraversal(TreeNode *root) {
@@ -155,6 +156,7 @@ public:
 };
 ```
 
-## 总结
+### 总结
 
 可以看到，树的遍历通过递归或者堆栈的方式都是比较容易的，网上还有更牛的不用栈的方法，只是我没理解，就不做过多说明了。
+

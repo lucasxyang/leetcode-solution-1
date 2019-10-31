@@ -1,19 +1,18 @@
-# Reverse Linked List II
+# Reverse Linked List
+
+## Reverse Linked List II
 
 > Reverse a linked list from position m to n. Do it in-place and in one-pass.
+>
+> For example: Given 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL, m = 2 and n = 4,
+>
+> return 1-&gt;4-&gt;3-&gt;2-&gt;5-&gt;NULL.
+>
+> Note: Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.
 
-> For example:
-> Given 1->2->3->4->5->NULL, m = 2 and n = 4,
+这题要求我们翻转\[m, n\]区间之间的链表。对于链表翻转来说，几乎都是通用的做法，譬如`p1 -> p2 -> p3 -> p4`，如果我们要翻转p2和p3，其实就是将p3挂载到p1的后面，所以我们需要知道p2的前驱节点p1。伪代码如下：
 
-> return 1->4->3->2->5->NULL.
-
-> Note:
-Given m, n satisfy the following condition:
-1 ≤ m ≤ n ≤ length of list.
-
-这题要求我们翻转[m, n]区间之间的链表。对于链表翻转来说，几乎都是通用的做法，譬如`p1 -> p2 -> p3 -> p4`，如果我们要翻转p2和p3，其实就是将p3挂载到p1的后面，所以我们需要知道p2的前驱节点p1。伪代码如下：
-
-```c++
+```cpp
     //保存p3
     n = p2->next;
     //将p3的next挂载到p2后面
@@ -28,7 +27,7 @@ Given m, n satisfy the following condition:
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     ListNode *reverseBetween(ListNode *head, int m, int n) {
@@ -59,26 +58,25 @@ public:
 };
 ```
 
-# Reverse Nodes in k-Group
+## Reverse Nodes in k-Group
 
 > Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
-
+>
 > If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is.
-
+>
 > You may not alter the values in the nodes, only nodes itself may be changed.
-
+>
 > Only constant memory is allowed.
-
-> For example,
-> Given this linked list: 1->2->3->4->5
-
-> For k = 2, you should return: 2->1->4->3->5
-
-> For k = 3, you should return: 3->2->1->4->5
+>
+> For example, Given this linked list: 1-&gt;2-&gt;3-&gt;4-&gt;5
+>
+> For k = 2, you should return: 2-&gt;1-&gt;4-&gt;3-&gt;5
+>
+> For k = 3, you should return: 3-&gt;2-&gt;1-&gt;4-&gt;5
 
 这题要求我们按照每k个节点对其进行翻转，理解了链表如何翻转之后很容易处理，唯一需要注意的就是每次k个翻转之后，一定要知道最后一个节点，因为这个节点就是下组的前驱节点了。
 
-```c++
+```cpp
 ListNode *reverseKGroup(ListNode *head, int k) {
         if(k <= 1 || !head) {
             return head;
@@ -119,3 +117,4 @@ ListNode *reverseKGroup(ListNode *head, int k) {
         return p;
     }
 ```
+

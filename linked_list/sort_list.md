@@ -1,10 +1,12 @@
 # Sort List
 
-> Sort a linked list in O(n log n) time using constant space complexity.
+## Sort List
+
+> Sort a linked list in O\(n log n\) time using constant space complexity.
 
 这题要求我们对链表进行排序，我们可以使用divide and conquer的方式，依次递归的对链表左右两半进行排序就可以了。代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
    ListNode *sortList(ListNode *head) {
@@ -68,7 +70,7 @@ public:
 };
 ```
 
-# Insertion Sort List
+## Insertion Sort List
 
 > Sort a linked list using insertion sort.
 
@@ -76,7 +78,7 @@ public:
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
      ListNode *insertionSortList(ListNode *head) {
@@ -107,3 +109,4 @@ public:
     }
 };
 ```
+

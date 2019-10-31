@@ -1,12 +1,12 @@
 # Rotate List
 
 > Given a list, rotate the list to the right by k places, where k is non-negative.
-
+>
 > For example:
-
-> Given 1->2->3->4->5->NULL and k = 2,
-
-> return 4->5->1->2->3->NULL.
+>
+> Given 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL and k = 2,
+>
+> return 4-&gt;5-&gt;1-&gt;2-&gt;3-&gt;NULL.
 
 这题要求把链表后面k个节点轮转到链表前面。
 
@@ -14,7 +14,7 @@
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     ListNode *rotateRight(ListNode *head, int k) {
@@ -46,3 +46,4 @@ public:
     }
 };
 ```
+

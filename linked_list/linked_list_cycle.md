@@ -1,15 +1,16 @@
 # Linked List Cycle
 
-> Given a linked list, determine if it has a cycle in it.
+## Linked List Cycle
 
-> Follow up:
-> Can you solve it without using extra space?
+> Given a linked list, determine if it has a cycle in it.
+>
+> Follow up: Can you solve it without using extra space?
 
 这道题就是判断一个链表是否存在环，非常简单的一道题目，我们使用两个指针，一个每次走两步，一个每次走一步，如果一段时间之后这两个指针能重合，那么铁定存在环了。
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -33,20 +34,18 @@ public:
 };
 ```
 
-# Linked List Cycle II
+## Linked List Cycle II
 
 > Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
-
-> Follow up:
-> Can you solve it without using extra space?
+>
+> Follow up: Can you solve it without using extra space?
 
 紧跟着第一题，这题不光要求出是否有环，而且还需要得到这个环开始的节点。譬如下面这个，起点就是n2。
 
-```
+```text
         n6-----------n5
         |            |
   n1--- n2---n3--- n4|
-
 ```
 
 我们仍然可以使用两个指针fast和slow，fast走两步，slow走一步，判断是否有环，当有环重合之后，譬如上面在n5重合了，那么如何得到n2呢？
@@ -55,7 +54,7 @@ public:
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
@@ -84,40 +83,39 @@ public:
 };
 ```
 
-# Intersection of Two Linked Lists
+## Intersection of Two Linked Lists
 
 > Write a program to find the node at which the intersection of two singly linked lists begins.
-
-
+>
 > For example, the following two linked lists:
-
->```
-A:          a1 → a2
-                   ↘
-                     c1 → c2 → c3
-                   ↗
-B:     b1 → b2 → b3
-```
-begin to intersect at node c1.
-
-
+>
+> ```text
+> A:          a1 → a2
+>                    ↘
+>                      c1 → c2 → c3
+>                    ↗
+> B:     b1 → b2 → b3
+> ```
+>
+> begin to intersect at node c1.
+>
 > Notes:
-
-> + If the two linked lists have no intersection at all, return null.
-> + The linked lists must retain their original structure after the function returns.
-> + You may assume there are no cycles anywhere in the entire linked structure.
-> + Your code should preferably run in O(n) time and use only O(1) memory.
+>
+> * If the two linked lists have no intersection at all, return null.
+> * The linked lists must retain their original structure after the function returns.
+> * You may assume there are no cycles anywhere in the entire linked structure.
+> * Your code should preferably run in O\(n\) time and use only O\(1\) memory.
 
 这题需要得到两个链表的交接点，也就是c1，这一题也很简单。
 
-+ 遍历A，到结尾之后，将A最后的节点连接到B的开头，也就是`c3 -> b1`
-+ 使用两个指针fast和slow，从a1开始，判断是否有环
-+ 如果没环，在返回之前记得将`c3 -> b1`给断开
-+ 如果有环，则按照第二题的解法得到c1，然后断开`c3 -> b1`
+* 遍历A，到结尾之后，将A最后的节点连接到B的开头，也就是`c3 -> b1`
+* 使用两个指针fast和slow，从a1开始，判断是否有环
+* 如果没环，在返回之前记得将`c3 -> b1`给断开
+* 如果有环，则按照第二题的解法得到c1，然后断开`c3 -> b1`
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
@@ -167,3 +165,4 @@ public:
     }
 };
 ```
+

@@ -1,4 +1,6 @@
-# Convert Sorted List to Binary Search Tree
+# 108, 109. Convert Sorted List/Array to Binary Search Tree \[Series\]
+
+## 109. Convert Sorted List to Binary Search Tree
 
 > Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
 
@@ -8,7 +10,7 @@
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
 
@@ -38,13 +40,13 @@ public:
 };
 ```
 
-# Convert Sorted Array to Binary Search Tree
+## 108. Convert Sorted Array to Binary Search Tree
 
 > Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
 
 这题类似上面那题，同样地解题方式，对于数组来说，能更方便的得到中间节点，代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     TreeNode *sortedArrayToBST(vector<int> &num) {
@@ -66,3 +68,4 @@ public:
     }
 };
 ```
+

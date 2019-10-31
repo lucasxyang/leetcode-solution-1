@@ -1,20 +1,22 @@
 # Unique Paths
 
-> A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
+## Unique Paths
 
-> The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
-
+> A robot is located at the top-left corner of a m x n grid \(marked 'Start' in the diagram below\).
+>
+> The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid \(marked 'Finish' in the diagram below\).
+>
 > How many possible unique paths are there?
 
-这题是一道典型的dp问题，如果机器人要到(i, j)这个点，他可以选择先到(i - 1, j)或者，(i, j - 1)，也就是说，到(i, j)的唯一路径数等于(i - 1, j)加上(i, j - 1)的个数，所以我们很容易得出dp方程:
+这题是一道典型的dp问题，如果机器人要到\(i, j\)这个点，他可以选择先到\(i - 1, j\)或者，\(i, j - 1\)，也就是说，到\(i, j\)的唯一路径数等于\(i - 1, j\)加上\(i, j - 1\)的个数，所以我们很容易得出dp方程:
 
 `dp[i][j] = dp[i - 1][j] + dp[i][j - 1]`
 
-dp[i][j]表示从点(0, 0)到(i, j)唯一路径数量。
+dp\[i\]\[j\]表示从点\(0, 0\)到\(i, j\)唯一路径数量。
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     int uniquePaths(int m, int n) {
@@ -40,17 +42,17 @@ public:
 };
 ```
 
-# Unique Paths II
+## Unique Paths II
 
 > Now consider if some obstacles are added to the grids. How many unique paths would there be?
-
+>
 > An obstacle and empty space is marked as 1 and 0 respectively in the grid.
 
 这题跟上一题唯一的区别在于多了障碍物，如果某一个点有障碍，那么机器人无法通过。
 
 代码如下:
 
-```c++
+```cpp
 class Solution {
 public:
     int uniquePathsWithObstacles(vector<vector<int> > &obstacleGrid) {
@@ -91,19 +93,19 @@ public:
 };
 ```
 
-# Minimum Path Sum
+## Minimum Path Sum
 
 > Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path.
-
+>
 > Note: You can only move either down or right at any point in time.
 
-这题跟前面两题差不多，所以放到这里说明了。我们使用dp[i][j]表明从(0, 0)到(i, j)最小的路径和，那么dp方程为:
+这题跟前面两题差不多，所以放到这里说明了。我们使用dp\[i\]\[j\]表明从\(0, 0\)到\(i, j\)最小的路径和，那么dp方程为:
 
 `dp[i][j] = min(dp[i][j-1], dp[i - 1][j]) + grid[i][j]`
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     int minPathSum(vector<vector<int> > &grid) {
@@ -135,3 +137,4 @@ public:
     }
 };
 ```
+

@@ -1,7 +1,7 @@
 # Copy List with Random Pointer
 
 > A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
-
+>
 > Return a deep copy of the list.
 
 这题要求深拷贝一个带有random指针的链表random可能指向空，也可能指向链表中的任意一个节点。
@@ -10,7 +10,7 @@
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     RandomListNode *copyRandomList(RandomListNode *head) {
@@ -49,16 +49,15 @@ public:
 
 但这题其实还有更巧妙的作法。假设有如下链表：
 
-```
+```text
 |------------|
 |            v
 1  --> 2 --> 3 --> 4
-
 ```
 
 节点1的random指向了3。首先我们可以通过next遍历链表，依次拷贝节点，并将其添加到原节点后面，如下：
 
-```
+```text
 |--------------------------|
 |                          v
 1  --> 1' --> 2 --> 2' --> 3 --> 3' --> 4 --> 4'
@@ -70,7 +69,7 @@ public:
 
 调整新的节点的random指针，对于上面例子来说，我们需要将1'的random指向3'，其实也就是原先random指针的next节点。
 
-```
+```text
 |--------------------------|
 |                          v
 1  --> 1' --> 2 --> 2' --> 3 --> 3' --> 4 --> 4'
@@ -82,7 +81,7 @@ public:
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     RandomListNode *copyRandomList(RandomListNode *head) {
@@ -133,3 +132,4 @@ public:
     }
 };
 ```
+

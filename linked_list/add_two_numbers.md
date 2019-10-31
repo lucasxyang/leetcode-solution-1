@@ -1,14 +1,14 @@
 # Add Two Numbers
 
 > You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
-
-> Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-
-> Output: 7 -> 0 -> 8
+>
+> Input: \(2 -&gt; 4 -&gt; 3\) + \(5 -&gt; 6 -&gt; 4\)
+>
+> Output: 7 -&gt; 0 -&gt; 8
 
 两个链表相加的问题，需要处理好进位就成了，比较简单，直接上代码：
 
-```c++
+```cpp
 class Solution {
 public:
     ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
@@ -40,3 +40,4 @@ public:
     }
 };
 ```
+

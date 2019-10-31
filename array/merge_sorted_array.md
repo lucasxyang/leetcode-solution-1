@@ -1,9 +1,8 @@
-# Merge Sorted Array
+# 88. Merge Sorted Array
 
 > Given two sorted integer arrays A and B, merge B into A as one sorted array.
-
-> Note:
-> You may assume that A has enough space (size that is greater or equal to m + n) to hold additional elements from B. The number of elements initialized in A and B are m and n respectively.
+>
+> Note: You may assume that A has enough space \(size that is greater or equal to m + n\) to hold additional elements from B. The number of elements initialized in A and B are m and n respectively.
 
 A和B都已经是排好序的数组，我们只需要从后往前比较就可以了。
 
@@ -11,7 +10,7 @@ A和B都已经是排好序的数组，我们只需要从后往前比较就可以
 
 代码如下：
 
-```c++
+```cpp
 class Solution {
 public:
     void merge(int A[], int m, int B[], int n) {
@@ -40,3 +39,4 @@ public:
     }
 };
 ```
+

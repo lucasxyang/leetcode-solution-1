@@ -1,22 +1,16 @@
-# Same Tree
+# 100. Same Tree
 
-> Given two binary trees, write a function to check if they are equal or not.
-Two binary trees are considered equal if they are structurally identical and the nodes have the same values.
+> Given two binary trees, write a function to check if they are equal or not. Two binary trees are considered equal if they are structurally identical and the nodes have the same values.
 
+题目翻译: 给两棵树，写一个函数来判断这两棵树是否相同. 我们判定一棵树是否相同的条件为这两棵树的结构相同，并且每个节点的值相同.
 
-题目翻译:
-给两棵树，写一个函数来判断这两棵树是否相同. 我们判定一棵树是否相同的条件为这两棵树的结构相同，并且每个节点的值相同.
+解题思路: 这道题中规中矩，很简单，我们直接用DFS前序遍历这两棵树就可以了.
 
-
-解题思路:
-这道题中规中矩，很简单，我们直接用DFS前序遍历这两棵树就可以了.
-
-时间复杂度分析:
-因为是DFS, 所以时间复杂度为O(n)
-
+时间复杂度分析: 因为是DFS, 所以时间复杂度为O\(n\)
 
 代码如下:
-```c++
+
+```cpp
 /**
  * Definition for binary tree
  * struct TreeNode {
@@ -42,5 +36,5 @@ public:
         return false;
     }
 };
-
 ```
+

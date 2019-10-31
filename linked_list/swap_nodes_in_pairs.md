@@ -1,15 +1,14 @@
 # Swap Nodes in Pairs
 
 > Given a linked list, swap every two adjacent nodes and return its head.
-
-> For example,
-> Given 1->2->3->4, you should return the list as 2->1->4->3.
-
+>
+> For example, Given 1-&gt;2-&gt;3-&gt;4, you should return the list as 2-&gt;1-&gt;4-&gt;3.
+>
 > Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
 
 这题要求遍历链表，两两交换，也算是一道比较简单的题目，我们只需要拿到需要交换的前驱节点就可以了。直接上代码：
 
-```c++
+```cpp
 class Solution {
 public:
     ListNode *swapPairs(ListNode *head) {
@@ -34,3 +33,4 @@ public:
     }
 };
 ```
+

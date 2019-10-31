@@ -1,14 +1,11 @@
 # Add Binary
 
-> Given two binary strings, return their sum (also a binary string).
-
-> For example,
-a = "11"
-b = "1"
-Return "100".
-
+> Given two binary strings, return their sum \(also a binary string\).
+>
+> For example, a = "11" b = "1" Return "100".
+>
 > 题目翻译: 对于给定的两个二进制数字所表达的字符串，我们求其相加所得到的结果， 根据上例便可得到答案.
-
+>
 > 题目分析: 我认为这道题所要注意的地方涵盖以下几个方面:
 
 1. 对字符串的操作.
@@ -16,11 +13,11 @@ Return "100".
 3. 我们还要考虑两个字符串如果不同长度会怎样.
 4. int 类型和char类型的相互转换.
 
-> 时间复杂度:其实这就是针对两个字符串加起来跑一遍，O(n) n代表长的那串字符串长度.
+> 时间复杂度:其实这就是针对两个字符串加起来跑一遍，O\(n\) n代表长的那串字符串长度.
 
 代码如下:
 
-```c++
+```cpp
 class Solution {
 public:
     string addBinary(string a, string b) {
@@ -76,7 +73,5 @@ public:
         return ret;
     }
 };
-
 ```
-
 
