@@ -1,6 +1,6 @@
-# Remove Duplicates from Sorted List
+# 82, 83. Remove Duplicates from Sorted List \[Series\]
 
-## Remove Duplicates from Sorted List
+## 83. Remove Duplicates from Sorted List
 
 > Given a sorted linked list, delete all duplicates such that each element appear only once.
 >
@@ -40,7 +40,7 @@ public:
 };
 ```
 
-## Remove Duplicates from Sorted List II
+## 82. Remove Duplicates from Sorted List II
 
 > Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
 >

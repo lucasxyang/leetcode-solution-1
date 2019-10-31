@@ -1,6 +1,6 @@
-# Sort List
+# 147, 148. Sort List \[Series\]
 
-## Sort List
+## 148. Sort List
 
 > Sort a linked list in O\(n log n\) time using constant space complexity.
 
@@ -70,7 +70,7 @@ public:
 };
 ```
 
-## Insertion Sort List
+## 147. Insertion Sort List
 
 > Sort a linked list using insertion sort.
 

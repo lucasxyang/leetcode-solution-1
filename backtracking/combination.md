@@ -1,4 +1,4 @@
-# Combination
+# Combination \[Topical\]
 
 ## Combination
 
@@ -6,7 +6,7 @@
 
 先来讨论一下第一题Combination.
 
-## Combination
+## 77. Combination
 
 > Given two integers n and k, return all possible combinations of k numbers out of 1,2,...,n.
 
@@ -55,7 +55,7 @@ public:
 };
 ```
 
-## Combination Sum
+## 39. Combination Sum
 
 > Given a set of candidate numbers \(C\) and a target number \(T\), find all unique combinations in C where the candidate numbers sums to T.
 >
@@ -114,7 +114,7 @@ public:
 };
 ```
 
-## Combination Sum II
+## 40. Combination Sum II
 
 > Given a collection of candidate numbers \(C\) and a target number \(T\), find all unique combinations in C where the candidate numbers sums to T.
 >
@@ -171,7 +171,7 @@ public:
 };
 ```
 
-## Letter Combinations of a Phone Number
+## 17. Letter Combinations of a Phone Number
 
 > Given a digit string, return all possible letter combinations that the number could represent. A mapping of digit to letters \(just like on the telephone buttons\) is given as below: ![](http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Telephone-keypad2.svg/200px-Telephone-keypad2.svg.png)
 

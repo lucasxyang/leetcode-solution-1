@@ -1,6 +1,6 @@
-# Maximum Subarray
+# 53, 152. Maximum Subarray \[Series\]
 
-## Maximum Subarray
+## 53. Maximum Subarray
 
 > Find the contiguous subarray within an array \(containing at least one number\) which has the largest sum.
 >
@@ -88,7 +88,7 @@ public:
 };
 ```
 
-## Maxmimum Product Subarray
+## 152. Maximum Product Subarray
 
 > Find the contiguous subarray within an array \(containing at least one number\) which has the largest product.
 >

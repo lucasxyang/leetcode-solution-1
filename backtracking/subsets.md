@@ -1,6 +1,6 @@
-# Subsets
+# Subsets \[Topical\]
 
-## Subsets
+## 78. Subsets
 
 > Given a set of distinct integers, S, return all possible subsets.
 >
@@ -72,7 +72,7 @@ public:
 };
 ```
 
-## Subsets II
+## 90. Subsets II
 
 > Given a collection of integers that might contain duplicates, S, return all possible subsets.
 >

@@ -1,6 +1,6 @@
-# Unique Paths
+# 62, 63, 64. Unique Paths \[Series\]
 
-## Unique Paths
+## 62. Unique Paths
 
 > A robot is located at the top-left corner of a m x n grid \(marked 'Start' in the diagram below\).
 >
@@ -42,7 +42,7 @@ public:
 };
 ```
 
-## Unique Paths II
+## 63. Unique Paths II
 
 > Now consider if some obstacles are added to the grids. How many unique paths would there be?
 >
@@ -93,7 +93,7 @@ public:
 };
 ```
 
-## Minimum Path Sum
+## 64. Minimum Path Sum
 
 > Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path.
 >

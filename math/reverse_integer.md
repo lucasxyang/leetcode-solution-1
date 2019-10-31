@@ -1,4 +1,4 @@
-# Reverse Integer
+# 7. Reverse Integer
 
 > Reverse Integer: Reverse digits of an integer.
 >

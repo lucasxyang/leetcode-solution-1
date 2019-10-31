@@ -1,12 +1,12 @@
-# Permutation
+# Permutation \[Topical\]
 
 ## Permutation
 
 ## Permutation这个分支是在backtracking下的一个子分支，其具体的解题方法和Combination几乎是同出一辙，一个思路，对于给定数组用DFS方法一层一层遍历，在这个section当中，我们将对于leetcode上出现的permutation问题进行逐个分析与解答.
 
-## Permutations
+## 46. Permutations
 
-> given a collection of numbers, return all posibile permutations.
+> given a collection of numbers, return all possible permutations.
 >
 > For example, \[1,2,3\] have the following permutations: \[1,2,3\], \[1,3,2\], \[2,1,3\], \[2,3,1\], \[3,1,2\], and \[3,2,1\].
 
@@ -58,7 +58,7 @@ public:
 };
 ```
 
-## Permutations II
+## 47. Permutations II
 
 > Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 >

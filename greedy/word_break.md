@@ -1,6 +1,6 @@
-# Word Break
+# 139, 140. Word Break \[Series\]
 
-## Word Break
+## 139. Word Break
 
 > Given a string s and a dictionary of words dict, determine if s can be segmented into a space-separated sequence of one or more dictionary words.
 >
@@ -37,7 +37,7 @@ public:
 };
 ```
 
-## World Break II
+## 140. World Break II
 
 > Given a string s and a dictionary of words dict, add spaces in s to construct a sentence where each word is a valid dictionary word.
 >

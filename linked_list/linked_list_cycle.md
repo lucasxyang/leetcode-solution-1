@@ -1,6 +1,6 @@
-# Linked List Cycle
+# 141, 142, 160. Linked List Cycle \[Series\]
 
-## Linked List Cycle
+## 141. Linked List Cycle
 
 > Given a linked list, determine if it has a cycle in it.
 >
@@ -34,7 +34,7 @@ public:
 };
 ```
 
-## Linked List Cycle II
+## 142. Linked List Cycle II
 
 > Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
 >
@@ -83,7 +83,7 @@ public:
 };
 ```
 
-## Intersection of Two Linked Lists
+## 160. Intersection of Two Linked Lists
 
 > Write a program to find the node at which the intersection of two singly linked lists begins.
 >

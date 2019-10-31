@@ -1,6 +1,6 @@
-# Jump Game
+# 45, 55. Jump Game \[Series\]
 
-## Jump Game
+## 55. Jump Game
 
 > Given an array of non-negative integers, you are initially positioned at the first index of the array.
 >
@@ -45,7 +45,7 @@ public:
 };
 ```
 
-## Jump Game II
+## 45. Jump Game II
 
 > Given an array of non-negative integers, you are initially positioned at the first index of the array.
 >

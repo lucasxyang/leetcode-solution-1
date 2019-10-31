@@ -1,6 +1,6 @@
-# Unique Binary Search Trees
+# 95, 96. Unique Binary Search Trees \[Series\]
 
-## Unique Binary Search Trees
+## 96. Unique Binary Search Trees
 
 > Given n, how many structurally unique BST's \(binary search trees\) that store values 1...n?
 >
@@ -46,7 +46,7 @@ public:
 };
 ```
 
-## Unique Binary Search Trees II
+## 95. Unique Binary Search Trees II
 
 > Given n, generate all structurally unique BST's \(binary search trees\) that store values 1...n.
 >

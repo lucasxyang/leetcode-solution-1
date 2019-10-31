@@ -1,6 +1,6 @@
-# Reverse Linked List
+# 25, 92, 206. Reverse Linked List \[Series\]
 
-## Reverse Linked List II
+## 92. Reverse Linked List II
 
 > Reverse a linked list from position m to n. Do it in-place and in one-pass.
 >
@@ -58,7 +58,7 @@ public:
 };
 ```
 
-## Reverse Nodes in k-Group
+## 25. Reverse Nodes in k-Group
 
 > Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
 >

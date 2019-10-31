@@ -1,6 +1,6 @@
-# Best Time To Buy And Sell Stock
+# 121, 122, 123. Best Time To Buy And Sell Stock \[Series\]
 
-## Best Time to Buy and Sell Stock
+## 121. Best Time to Buy and Sell Stock
 
 > Say you have an array for which the ith element is the price of a given stock on day i.
 >
@@ -38,7 +38,7 @@ public:
 };
 ```
 
-## Best Time to Buy and Sell Stock II
+## 122. Best Time to Buy and Sell Stock II
 
 > Say you have an array for which the ith element is the price of a given stock on day i.
 >
@@ -69,7 +69,7 @@ public:
 };
 ```
 
-## Best Time to Buy and Sell Stock III
+## 123. Best Time to Buy and Sell Stock III
 
 > Say you have an array for which the ith element is the price of a given stock on day i.
 >
